@@ -1,0 +1,71 @@
+<!doctype html>
+<html ng-app="quacker">
+<head>
+    <title>Quacker</title>
+    <base href="/">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="main.css">
+    
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+</head>
+<body ng-controller="MainController as main">
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" ng-init="navCollapsed = true"
+                ng-click="navCollapsed = !navCollapsed">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#/"><img src="img/quacker.png"/></a>
+    </div>
+    <div class="collapse navbar-collapse" ng-class="!navCollapsed && 'in'" ng-click="navCollapsed=true">
+        <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Profile</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div ng-if="main.loaded">
+    <div messages></div>
+    <div ui-view></div>
+    <quack-list-directive></quack-list-directive>
+    <modal-window-directive></modal-window-directive>
+</div>
+<div ng-if="!main.loaded">
+    Loading...
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.13/angular-ui-router.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.12.1/ui-bootstrap-tpls.min.js"></script>
+
+<script src="quacker.js"></script>
+<script src="MainController.js"></script>
+
+<script src="logIn/LogInController.js"></script>
+
+<script src="messages/MessagesController.js"></script>
+<script src="messages/messagesDirective.js"></script>
+
+<script src="profile/EditProfileController.js"></script>
+<script src="profile/ViewProfileController.js"></script>
+
+<script src="quacks/CreateQuackController.js"></script>
+<script src="quacks/createQuackDirective.js"></script>
+<script src="quacks/QuackListController.js"></script>
+<script src="quacks/quackListDirective.js"></script>
+
+<script src="register/RegisterController.js"></script>
+
+<script src="services/user.js"></script>
+<script src="services/quacks.js"></script>
+
+
+</body>
+</html>

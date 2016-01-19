@@ -1,0 +1,22 @@
+<div id = "logInFormContainer">
+	<form ng-submit="logIn.login()" novalidate>
+		<fieldset id="login" class="rounded-box">
+		    <label for="username">
+		    	<span>Username</span>
+		    	<input id="username" type="text" required ng-model=logIn.username placeholder="Username">
+		    </label>
+		    <br>
+
+		    <label for="password">
+		    	<span>Password</span>
+		    	<input id="password" type="password" required ng-model=logIn.password placeholder="Password">
+			</label>
+			<br>
+
+		    <input type=submit value="Log in">
+		    <br><br>
+
+		    <a ui-sref="register">Sign up</a>
+		</fieldset>
+	</form>
+</div>

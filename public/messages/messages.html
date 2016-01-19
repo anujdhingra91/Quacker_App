@@ -1,0 +1,6 @@
+<div ng-if="messages.messages.length > 0">
+    <div ng-repeat="message in messages.messages track by $index" class="{{message.type}}"  ng-click="messages.close($index)">
+        <i class="glyphicon glyphicon-remove-sign"></i>
+        {{message.contents}}
+    </div>
+</div>

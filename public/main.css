@@ -1,0 +1,114 @@
+.rounded-box {
+    background: #FFF;
+    border-radius: 1em;
+    padding: 1em;
+    margin: 1em auto;
+    box-shadow: 2px 2px 8px #333;
+}
+
+label span {
+	text-align: right;
+	display: inline-block;
+	margin-right: .25em;
+}
+
+#register label span {
+	width: 5em;
+}
+
+/* Log in */
+#login {
+	width: 21em;
+}
+#login label span {
+	width: 5em;
+}
+
+/* View Profile */
+.profile-container {
+    width: 24em;
+}
+.profile-container img {
+	float: left;
+	margin-right: 1em;
+}
+.profile-container .profile {
+	float: left;
+}
+.profile dt {
+	text-align: right;
+	width: 3em;
+	float: left;
+	clear: left;
+	margin-right: .5em;
+}
+.profile dd {
+	float: left;
+	clear: right;
+}
+
+/* Edit Profile */
+#edit_profile {
+    width: 21em;
+}
+#edit_profile span {
+	width: 5em;
+}
+
+body {
+	background-color: #b0c4de;
+	text-align: center;
+}
+
+#header {
+	color: white;
+	background-color: black;
+}
+
+.navbar {
+    border: 0;
+    background-color: black;
+    color: white;
+    padding-left: 0.2em;
+    border-radius: 0;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.navbar-brand img {
+    padding-left: 0.2em;
+    height: 100%;
+}
+
+#headerField {
+	text-align: center;
+	font-size: 200%;
+}
+
+
+#headerContainer {
+	text-align: center;
+}
+
+.col-left {
+    float: left;
+    width: 50%;
+    text-align: right;
+    padding-right: .25em;
+}
+
+.col-right {
+    float: right;
+    width: 50%;
+    text-align: left;
+    padding-left: .25em;
+}
+
+.search-filter {
+    width: 30%;
+}
+
+
+

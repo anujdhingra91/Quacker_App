@@ -1,0 +1,13 @@
+<!--<button ng-click=quacks.fetchQuacks()>List</button>-->
+<ul>
+    <li ng-repeat="quack in quacks.all_quacks">
+        <div><h1>{{quack.message}}</h1></div>
+        <div ng-repeat="prop in quack.images">
+            <div><img src="{{prop.src}}" width=150 /></div>
+            <div style="background:rgba(0,0,0,0.4); padding:3px">{{prop.caption}}</div>
+        </div>
+        <button ng-show="{{quack.user._id == quacks.getUserID()}}" ng-click="quacks.removeQuack(quack._id)">x</button>
+    </li>
+</ul>
+
+

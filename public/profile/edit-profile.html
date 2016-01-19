@@ -1,0 +1,23 @@
+<form ng-submit="edit.update()">
+	<fieldset id="edit_profile" class="rounded-box">
+		<label for="email">
+	    	<span>Email</span>
+	    	<input id="email" type="email" required ng-model=edit.profile.email>
+	    </label>
+	    <br>
+
+	    <label for="password">
+	    	<span>Password</span>
+	    	<input id="password" type="password" required ng-model=edit.profile.password placeholder="Password">
+		</label>
+		<br>
+
+	    <label for="avatar">
+	    	<span>Avatar</span>
+	    	<input id="avatar" type="text" ng-model=edit.profile.avatar>
+	    </label>
+	    <br>
+
+	    <input type=submit value="Update Profile">
+	</fieldset>
+</form>

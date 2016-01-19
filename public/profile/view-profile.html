@@ -1,0 +1,13 @@
+<div class="profile-container rounded-box clearfix">
+	<img src="{{view.info.avatar || '/img/default-profile.png'}}" width="64" height="64" />
+	<div class="profile">
+		<dl>
+			<dt>Name:</dt> <dd>{{view.info.username}}</dd>
+			<dt>Email:</dt> <dd>{{view.info.email}}</dd>
+		</dl>
+		<a ui-sref="profile.edit">Edit Profile</a>
+	</div>
+</div>
+
+<create-quack></create-quack>
+<quack-list></quack-list>

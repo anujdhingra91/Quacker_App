@@ -1,0 +1,16 @@
+<input type=button 
+       id="dialog" 
+       title="Add a quack" 
+       value="Add quack"
+       ng-click="create.openModal()">
+       
+<div class="modal"  title="Modal time!">
+    <form ng-submit="create.addImageBox()">
+        <textarea placeholder="Quack Message" class="quack-message" autofocus maxlength=150></textarea>
+        <div class="image-container">
+            <input type="url" placeholder="Image Url" class="quack-image">
+            <input type="text" placeholder="Image Caption" class="quack-caption">
+        </div>
+        <input type="submit" value="Add new image">
+    </form>
+</div>

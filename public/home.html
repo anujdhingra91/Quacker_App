@@ -1,0 +1,28 @@
+<div>
+    <div class="col-left">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Find Quacks">
+            <span class="input-group-btn">
+                <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
+            </span>
+        </div>
+    </div>
+    <div class="col-right">
+        <div class="col-left">
+            <select class="form-control">
+                <option value="+date">Ascending</option>
+                <option value="-date" selected>Descending</option>
+            </select>
+        </div>
+        <div class="col-right">
+            <select class="form-control">
+                <option value="" selected>All</option>
+                <option value="">Read</option>
+                <option value="">Unread</option>
+            </select>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<div quack-list></div>
